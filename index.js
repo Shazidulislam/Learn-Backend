@@ -1,57 +1,37 @@
-const fs = require('node:fs');
+// http and https
 
-// fs.writeFile(file, data[, options], callback)
+const http = require('node:http')
 
-// fs.writeFile("File.txt" , "Hey hello data" , function(err){
+const server = http.createServer((req,res)=>{
+    res.end("Hello world")
+})
+console.log("hello bro")
+server.listen(3000)
 
-//     if(err)console.log(err);
-//     else console.log("Everything is okey here!")
-// })
+// NPM understaning
+// npm - node pacakaje manejer
 
-// fs.appendFile(path, data[, options], callback)
+//Understanding node_modules
+// dependencies are the packages that your project needs to work properly.
+// devDependencies -- are the packages that are only needed for development and testing purposes, but not for the production version of your project.
 
-// fs.appendFile("File.txt" , " Kyse ho app" ,function(err){
-//     if(err)console.log(err)
-//        else console.log("Successfully run appendFile ")
-// })
+// Scripts - Understanding default script PATH and custom script
 
-// fs.rename(oldPath, newPath, callback)
-
-// fs.rename("File.txt" , "Message.tst" , function(err){
-//     if(err)console.log(err)
-//        else console.log("Rname Complete!")
-// })
-
-// fs.copyFile(src, dest[, mode], callback)
-
-// fs.copyFile("File.txt" ,"./copeey/destination.txt" , function(err){
-//     if(err) throw err;
-//     else console.log("File.txt was copied to destination.txt")
-// } )
-
-// fs.unlink(path, callback)
-//  removes a file or symbolic link
-
-// fs.unlink("Message.ts" , function(err){
-//     if(err) throw err
-//     console.log("path/Message.ts file was deleted ")
-// })
-
-// fs.rmdir(path[, options], callback)
-// fs.rmdir() is used to remove (delete) a directory (folder) in Node.js.
+// modules vs pacakajes
+// node js core e ja installed thake ta modules
+// npm e ja install kora hoy ta packages
 
 
-// fs.rmdir("./copeey",{recursive:true} ,function(err){
-//     if(err) console.log(err)
-//     else console.log("Removed successfully")
-// })
+// Expressjs  Framework
+// Introduction to expressjs
+// Setting up a a basic expressjs application
+// Routing in expressjs
+// Middleware in expressjs
+// Response and Request in expressjs
+// Error handling in expressjs
 
+// What is main role of expressjs in backend development
 
+// expressjs is webfreamework in node.js  that simplifies backend devlopment .it help us to hnadle routing , request and response, middleware , and building restfull APIs. and MREN stack development
 
-// !fs.rm(path[, options], callback)
-// fs.rm() is a Node.js method used to delete files or folders.
-
-// fs.rm("./copeey",{recursive:true} ,function(err){
-//     if(err) console.log(err)
-//     else console.log("Removed successfully")
-// })
+// expressjs is manage everything from receiving the request and giving the response

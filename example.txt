@@ -1,0 +1,1 @@
+This is a examole of create a file useing node fs . and i understand this
