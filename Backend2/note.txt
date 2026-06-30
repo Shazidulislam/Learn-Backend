@@ -1,0 +1,11 @@
+setting up parser for form
+   install ejs from npm
+   setup ejs as a view engine
+   
+setting up ejs for ejs pages
+
+setting up public static files
+
+dynamic routing
+how to get oming from frontend at backend route
+
