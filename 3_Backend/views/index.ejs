@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stypesheets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-black text-white">
+   <div class="form p-10 max-w-2xl xl:max-w-3xl mx-auto" >
+    <form action="/create" method="POST" >
+        <input type="text" placeholder="Enter your name" class="border border-gray-300 rounded px-4 py-2 mb-4 w-full" name="title" >
+        <textarea class="border border-gray-300 rounded px-4 py-2 mb-4 w-full" placeholder="Enter your message"  name="description" ></textarea>
+        <button type="submit" class="bg-purple-500 text-white rounded px-4 w-full py-2 hover:bg-purple-600">Submit</button>
+
+    </form>
+
+    <div class="" >
+        <% if(files.length > 0) {
+            %>
+            <% files.map((file)=>{
+                %>
+                   <div class="task w-72 px-3 py-4" >
+                    <h1 class="text-lg font-bold">{file.title}</h1>
+                    <p>lorem ipsum dolor sit amet</p>
+                   </div>
+                <%
+            }) %>
+            <%
+        }else{%>
+            <h3 class="py-5 px-3 text-center"><%= file.description %></h3>
+            <%}%>
+    </div>
+
+   </div>
+</body>
+</html>
